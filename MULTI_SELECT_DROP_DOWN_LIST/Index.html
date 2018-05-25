@@ -51,7 +51,7 @@
 
 						angular.forEach($scope.options, function (item, index) {
 
-							$scope.model.push(item.id);
+							$scope.model.push(item.name);
 
 						});
 
@@ -69,7 +69,7 @@
 
 						angular.forEach($scope.model, function (item, index) {
 
-							if (item == option.id) {
+							if (item == option.name) {
 
 								intIndex = index;
 
@@ -84,7 +84,7 @@
 						}
 						else {
 
-							$scope.model.push(option.id);
+							$scope.model.push(option.name);
 
 						}
 
@@ -96,7 +96,7 @@
 
 						angular.forEach($scope.model, function (item, index) {
 
-							if (item == option.id) {
+							if (item == option.name) {
 
 								varClassName = 'glyphicon glyphicon-ok green';
 
