@@ -10,9 +10,10 @@
 
 	<script src="Scripts/angular.min.js"></script>
 	<script src="Scripts/Client/myApplication.js"></script>
-	<script src="Scripts/Client/dropdownMultiselect.js"></script>
+    	<script src="Scripts/Client/myController.js"></script>
+    <script src="Scripts/Client/dropdownMultiselect.js"></script>
 
-	<script src="Scripts/angular.min.js"></script>
+
 
 	<script>
 
@@ -125,8 +126,8 @@
 		// **************************************************
 		var varMyApplication =
 			angular.module('myApplication', ['myDirectivesApplication']);
+        var MyController = function ($scope) {
 
-		varMyApplication.controller('myController', function ($scope) {
 
 			$scope.users = [
 				{ "id": 1, "name": "Ali" },
@@ -138,7 +139,8 @@
 
 			$scope.selectedUserIds = [3, 5];
 
-		});
+    };
+
 		// **************************************************
 		// *** /Your AngularJS Application ******************
 		// **************************************************
@@ -160,7 +162,7 @@
 	</style>
 </head>
 <body>
-	<div class="container" ng-app="myApplication" ng-controller="myController">
+	<div class="container" ng-app="myApplication" ng-controller="MyController">
 		<br />
 		<br />
 
