@@ -1,24 +1,5 @@
-﻿(function () {
-    //make sure this matches the ng-app in the view
-    var varMyApplication =
-			angular.module('myApplication', ['myDirectivesApplication']);
-
-		varMyApplication.controller('myController', function ($scope) {
-
-			$scope.users = [
-				{ "id": 1, "name": "Ali" },
-				{ "id": 2, "name": "Sara" },
-				{ "id": 3, "name": "Babak" },
-				{ "id": 4, "name": "Sanaz" },
-				{ "id": 5, "name": "Dariush" },
-			];
-
-			$scope.selectedUserIds = [3, 5];
-
-		});
-
-
-    var varMyDirectivesApplication =
+﻿(function() {
+  	var varMyDirectivesApplication =
 			angular.module('myDirectivesApplication', []);
 
 		varMyDirectivesApplication.directive('dropdownMultiselect', function () {
@@ -115,7 +96,6 @@
 			}
 
 		});
+}
 
-
-    ///end of directive
-}())
+(angular.module("myApplication")));
