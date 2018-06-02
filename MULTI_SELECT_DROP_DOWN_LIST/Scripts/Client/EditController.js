@@ -2,7 +2,7 @@
      var varMyApplication =
 			angular.module('contactsRouting', ['myDirectivesApplication']);
 
-		varMyApplication.controller('myController', function ($scope) {
+		varMyApplication.controller('EditController', function ($scope) {
 
 			$scope.users = [
 				{ "id": 1, "name": "Friends" },
