@@ -1,6 +1,6 @@
 ﻿(function () {
      var varMyApplication =
-			angular.module('myApplication', ['myDirectivesApplication']);
+			angular.module('contactsRouting', ['myDirectivesApplication']);
 
 		varMyApplication.controller('myController', function ($scope) {
 
@@ -12,7 +12,7 @@
 				{ "id": 5, "name": "Business" },
 			];
 
-			$scope.selectedUserIds = ["select a relationship"];
+			$scope.selectedUserIds = ["select 1 or many relationship(s)"];
 
 		});
 
