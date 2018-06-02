@@ -1,5 +1,5 @@
-﻿(function() {
-  	var varMyDirectivesApplication =
+﻿(function () {
+      var varMyDirectivesApplication =
 			angular.module('myDirectivesApplication', []);
 
 		varMyDirectivesApplication.directive('dropdownMultiselect', function () {
@@ -96,6 +96,5 @@
 			}
 
 		});
-}
 
-(angular.module("myApplication")));
+}())

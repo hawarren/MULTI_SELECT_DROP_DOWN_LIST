@@ -97,7 +97,7 @@
     <Content Include="Scripts\Client\dropdownMultiselect.js" />
     <Content Include="Scripts\Client\myApplication.js" />
     <Content Include="Scripts\Client\myController.js" />
-    <Content Include="Scripts\Client\MyDirectivesApplication.js" />
+    <Content Include="Scripts\Client\myDirectivesApplication.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-et.js" />
