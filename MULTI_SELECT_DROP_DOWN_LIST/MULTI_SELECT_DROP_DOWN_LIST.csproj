@@ -94,7 +94,6 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Client\dropdownMultiselect.js" />
     <Content Include="Scripts\Client\myApplication.js" />
     <Content Include="Scripts\Client\myController.js" />
     <Content Include="Scripts\Client\myDirectivesApplication.js" />

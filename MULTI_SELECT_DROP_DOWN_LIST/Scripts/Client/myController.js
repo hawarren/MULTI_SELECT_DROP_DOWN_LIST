@@ -1,40 +1,21 @@
-﻿(function (app)
-{
-    //registers the controller with the main module
+﻿(function () {
+     var varMyApplication =
+			angular.module('myApplication', ['myDirectivesApplication']);
 
-    var app = angular.module("myApplication");
-    //capitalized to indicate constructor function
-    var MyController = function ($scope) {
-
+		varMyApplication.controller('myController', function ($scope) {
 
 			$scope.users = [
-				{ "id": 1, "name": "Ali" },
-				{ "id": 2, "name": "Sara" },
-				{ "id": 3, "name": "Babak" },
-				{ "id": 4, "name": "Sanaz" },
-				{ "id": 5, "name": "Dariush" },
+				{ "id": 1, "name": "Friends" },
+				{ "id": 2, "name": "Immediate Family" },
+				{ "id": 3, "name": "Colleagues" },
+				{ "id": 4, "name": "Extended Family" },
+				{ "id": 5, "name": "Business" },
 			];
 
-			$scope.selectedUserIds = [3, 5];
+			$scope.selectedUserIds = ["select a relationship"];
 
-    };
-    app.controller("MyController", MyController);
+		});
 
 
-    //put directive here for now
 
-});
-
-//varMyApplication.controller('MyController', function ($scope) {
-
-//			$scope.users = [
-//				{ "id": 1, "name": "Ali" },
-//				{ "id": 2, "name": "Sara" },
-//				{ "id": 3, "name": "Babak" },
-//				{ "id": 4, "name": "Sanaz" },
-//				{ "id": 5, "name": "Dariush" },
-//			];
-
-//			$scope.selectedUserIds = [3, 5];
-
-//		});
+}())
